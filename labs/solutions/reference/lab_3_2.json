@@ -1,0 +1,24 @@
+{
+ "rows": 2000,
+ "raw_qi": {
+  "records_k_lt_5": 2000,
+  "share_k_lt_5": 1.0,
+  "unique": 1998
+ },
+ "generalised": {
+  "records_k_lt_5": 0,
+  "share_k_lt_5": 0.0,
+  "unique": 0
+ },
+ "generalised_with_employer": {
+  "records_k_lt_5": 395,
+  "share_k_lt_5": 0.1975,
+  "unique": 139
+ },
+ "employer_e1": "جهة العمل E1 (تغليف)",
+ "e1_rows": 128,
+ "directory": 380,
+ "linked_unique_birthyear": 62,
+ "linked_unique_band": 3,
+ "band": "INT((2026-YEAR(birth_date))/10)*10, the same rule for the extract and the directory"
+}

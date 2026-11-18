@@ -1,0 +1,9 @@
+{
+ "attempts": 9600,
+ "accounts_breached": 143,
+ "viewed_prescriptions": 24,
+ "aware_hour": 31,
+ "dpo_hour": 49,
+ "authority_deadline_hour": 103,
+ "hours_left_when_dpo_learns": 54
+}

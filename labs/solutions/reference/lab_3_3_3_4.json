@@ -1,0 +1,66 @@
+{
+ "risks": {
+  "R1": {
+   "score": 12,
+   "band": "مرتفع جدًا",
+   "control": "C1",
+   "residual": 3,
+   "residual_band": "منخفض"
+  },
+  "R2": {
+   "score": 9,
+   "band": "مرتفع",
+   "control": "C2",
+   "residual": 3,
+   "residual_band": "منخفض"
+  },
+  "R3": {
+   "score": 16,
+   "band": "مرتفع جدًا",
+   "control": "C3",
+   "residual": 4,
+   "residual_band": "متوسط"
+  },
+  "R4": {
+   "score": 12,
+   "band": "مرتفع جدًا",
+   "control": "C4",
+   "residual": 4,
+   "residual_band": "متوسط"
+  },
+  "R5": {
+   "score": 9,
+   "band": "مرتفع",
+   "control": "C5",
+   "residual": 3,
+   "residual_band": "منخفض"
+  },
+  "R6": {
+   "score": 8,
+   "band": "مرتفع",
+   "control": "C6",
+   "residual": 4,
+   "residual_band": "متوسط"
+  },
+  "R7": {
+   "score": 9,
+   "band": "مرتفع",
+   "control": "C7",
+   "residual": 2,
+   "residual_band": "منخفض"
+  },
+  "R8": {
+   "score": 12,
+   "band": "مرتفع جدًا",
+   "control": "C8",
+   "residual": 3,
+   "residual_band": "منخفض"
+  }
+ },
+ "ineffective_controls": [
+  "C9",
+  "C10",
+  "C11"
+ ],
+ "recommendation": "إعادة التصميم: لا يصل نص المريض إلى نموذج توليدي، مع C1 إلى C8 على التصميم الجديد، ثم تقويم جديد قبل الإطلاق (اللائحة 25 (4))"
+}
