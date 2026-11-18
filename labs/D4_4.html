@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 4.4 · تمرين تسرب: دخول بكلمات مسربة · حماية البيانات الشخصية في التطبيق العملي</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D4_4.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day4.html#lab-4-4">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 4.4</span>
+<h1>تمرين تسرب: دخول بكلمات مسربة</h1>
+<p>تمرين على حادثة غير حادثة يوم المشروع: عدّ المتأثرين من سجل الدخول، والمهلة، وسجل الحادثة، وقائمة بنود الإشعارين</p>
+<div class="meta"><span>30 دقيقة</span><span>اليوم 4</span><span>الجلسة 4: تسرب البيانات: التقدير والإشعار والتوقيت</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="4.4">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>حكم على حادثة دخول بكلمات مرور مسربة: هل هي تسرب يستوجب الإشعار، ومتى ينتهي موعد إشعار الجهة المختصة.</li>
+    <li>عدد الحسابات التي دُخلت، وما رآه المهاجم فيها، من سجل دخول بـ 9600 محاولة.</li>
+    <li>سجل حادثة فيه بنود الإشعارين، تجربة لقالب يوم المشروع.</li>
+  </ul>
+</div>
+
+<div class="callout note"><b>تمرين، لا حادثة يوم المشروع.</b> الحادثة هنا غير حادثة المحاكاة. الهدف أن تجرب الحساب والقالب مرة قبل أن يمضي الوقت عليك فعلًا.</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/drill/drill_brief.txt" target="_blank"><b>drill_brief.txt</b><span>الموجز بالساعات النسبية من بدء الهجوم.</span></a>
+  <a href="files/drill/login_log.csv" download><b>login_log.csv</b><span>كل محاولة: الساعة، والمصدر، والحساب، والنتيجة، وما اطّلع عليه المهاجم.</span></a>
+  <a href="files/capstone/breach_log_template.xlsx" download><b>breach_log_template.xlsx</b><span>قالب سجل الحادثة الذي تستعمله في يوم المشروع.</span></a>
+</div>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · اقرأ الموجز واحسب ساعة العلم <span class="min">5 د</span></h3>
+  <p>متى علمت قُرب، ومتى علمت أنت؟ المهلة 72 ساعة من علم الجهة. اكتب الساعة التي ينتهي فيها الموعد، وكم بقي منها حين وصلك البلاغ.</p>
+</div>
+
+<div class="step">
+  <h3>2 · عدّ المتأثرين من السجل <span class="min">8 د</span></h3>
+  <p>افتح login_log.csv في جدول بيانات. صفِّ على «نجاح»: كم حسابًا مختلفًا؟ ثم صفِّ على ما اطّلع عليه المهاجم: كم حسابًا رأى فيه الوصفات؟</p>
+  <div class="prompt" data-tool="Calc / Excel / Sheets">صفوف النجاح: <span class="ph">=COUNTIF(D:D,"نجاح")</span>   الوصفات: <span class="ph">=COUNTIF(E:E,"*الوصفات*")</span></div>
+</div>
+
+<div class="step">
+  <h3>3 · قرار الإشعار ومهلته <span class="min">7 د</span></h3>
+  <p>هل الحادثة تسرب بيانات شخصية؟ هل يُحتمل ضرر؟ من يُشعر: الجهة المختصة، والأفراد، أو كلاهما؟ اكتب القرار بمادته.</p>
+</div>
+
+<div class="step">
+  <h3>4 · بنود الإشعارين في سجل الحادثة <span class="min">10 د</span></h3>
+  <p>املأ القالب: الوقائع بساعاتها، وبنود إشعار الجهة (أ إلى هـ)، وبنود إشعار الأفراد (أ إلى د). البند الذي لا تعرفه بعد يُكتب «يُستكمل» مع سببه.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>اكتب إشعار الأفراد لهذا التمرين في خمس جمل.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>ما ساعة علم قُرب، وما الساعة التي ينتهي فيها موعد الإشعار؟</li>
+  <li>كم حسابًا دُخل؟ وفي كم منها رأى المهاجم الوصفات؟</li>
+  <li>أي بند في إشعار الأفراد يخص هذه الحادثة بالذات؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المفتاح في <code>labs/solutions/D4_4.md</code>: 9600 محاولة، و143 حسابًا دُخل، و24 منها اطّلع فيها المهاجم على الوصفات. ساعة العلم 31، لا 49؛ الموعد الساعة 103، وبقي 54 ساعة حين علم المسؤول.</li>
+    <li>الفخ: حساب المهلة من الساعة 49. ارسم الخط الزمني على اللوح.</li>
+    <li>كل حساب نجح الدخول إليه نجح مرة واحدة في السجل، فعدد صفوف النجاح يساوي عدد الحسابات. نبّه إلى ذلك: في سجل آخر قد لا يتساويان.</li>
+    <li>البند الخاص في إشعار الأفراد: النصيحة (24 (5) (د)) بتغيير كلمة المرور وعدم إعادة استعمالها.</li>
+    <li>هذا المختبر بداية يوم المشروع: القالب نفسه، والساعة النسبية نفسها.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D4_3.html" rel="prev">→ المختبر السابق</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · حماية البيانات الشخصية في التطبيق العملي<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع a8e0896</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T09:11:03Z","version":"2027.1.0","commit":"a8e0896"},"course":{"id":"lds-dmg-206","code":"LDS-DMG-206","title":"حماية البيانات الشخصية في التطبيق العملي","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-dmg-206/","repo":"SDAIAAcademy/lds-dmg-206","home":"../index.html"},"lab":{"id":"4.4","title":"تمرين تسرب: دخول بكلمات مسربة","summary":"تمرين على حادثة غير حادثة يوم المشروع: عدّ المتأثرين من سجل الدخول، والمهلة، وسجل الحادثة، وقائمة بنود الإشعارين","minutes":30,"day":4,"unit":"اليوم 4","session":4,"deck":"../slides/day4.html#lab-4-4","prev":"D4_3.html","next":null,"alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

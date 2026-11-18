@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 4.3 · تقويم نقل التذاكر · حماية البيانات الشخصية في التطبيق العملي</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D4_3.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day4.html#lab-4-3">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 4.3</span>
+<h1>تقويم نقل التذاكر</h1>
+<p>تقويم مخاطر نقل نظام التذاكر إلى منطقة خارج المملكة بعناصره الستة، ومسار القرار، ومذكرة قرار لمديرة دعم المرضى</p>
+<div class="meta"><span>35 دقيقة</span><span>اليوم 4</span><span>الجلسة 3: النقل إلى خارج المملكة</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="4.3">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>عدد التذاكر التي فيها بيانات حساسة في عينة من 600، ونسبتها.</li>
+    <li>مسار قرار بخمسة أسئلة لنقل نظام التذاكر إلى منطقة المورد خارج المملكة، بمرجع لكل إجابة.</li>
+    <li>تقويم مخاطر النقل بعناصره الستة، ومذكرة قرار في فقرة لمديرة دعم المرضى.</li>
+  </ul>
+</div>
+
+<div class="callout warn"><b>دون ذكاء اصطناعي على العينة.</b> التذاكر من ملفات قُرب المقيدة وفيها بيانات صحية. مساعد القراءة مسموح على لائحة النقل المنشورة فقط.</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/transfer/transfer_plan.txt" target="_blank"><b>transfer_plan.txt</b><span>خطة لمياء النصيان، وحقائق المورد والدولة.</span></a>
+  <a href="files/transfer/tickets_sample.xlsx" download><b>tickets_sample.xlsx</b><span>عينة من 600 تذكرة: الفئة، وهل في النص بيانات صحية، ونوع المرفق.</span></a>
+  <a href="files/transfer/tra_template.xlsx" download><b>tra_template.xlsx</b><span>ورقة المسار، وورقة التقويم بعناصر المادة 7 (2)، وورقة المذكرة.</span></a>
+</div>
+<ul>
+  <li>لائحة نقل البيانات الشخصية إلى خارج المملكة، والمادة 29 من النظام.</li>
+</ul>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · اقرأ الخطة وعينة التذاكر <span class="min">6 د</span></h3>
+  <p>علّم في الخطة: الغرض، والاستمرار، وعلاقة قُرب بالمورد، والشهادة، والقائمة، والبديل الداخلي. هذه إجابات المسار.</p>
+</div>
+
+<div class="step">
+  <h3>2 · احسب ما في العينة من بيانات حساسة <span class="min">6 د</span></h3>
+  <p>التذكرة حساسة إن كان في نصها بيانات صحية، أو كان مرفقها نتيجة تحليل. صورة الهوية بيانات شخصية لا حساسة، ولقطة الشاشة لا تجعل التذكرة حساسة؛ عدّ صور الهوية وحدها، فهي سؤال الحد الأدنى. عدّ التذاكر لا العلامات: التذكرة التي فيها أمران تُعد مرة واحدة.</p>
+  <div class="prompt" data-tool="Calc / Excel / Sheets">E2: <span class="ph">=IF(OR(C2="نعم",D2="نتيجة تحليل"),1,0)</span>   ثم: <span class="ph">=SUM(E2:E601)</span></div>
+</div>
+
+<div class="step">
+  <h3>3 · مسار القرار بخمسة أسئلة <span class="min">10 د</span></h3>
+  <p>الغرض، ثم القائمة، ثم حالات الإعفاء واحدة واحدة، ثم الحاجة إلى التقويم، ثم القرار. لكل حالة إعفاء اكتب لماذا تنطبق أو لا تنطبق.</p>
+</div>
+
+<div class="step">
+  <h3>4 · التقويم بعناصره الستة <span class="min">8 د</span></h3>
+  <p>جملتان لكل عنصر. في «الحد الأدنى» قل هل يحتاج الوكلاء النص والمرفقات في الخارج، أم بيانات التذكرة الوصفية تكفي.</p>
+</div>
+
+<div class="step">
+  <h3>5 · مذكرة القرار في فقرة <span class="min">5 د</span></h3>
+  <p>القرار، وسببان بالأرقام، والبديل. لمياء النصيان طلبت رأيك لأن الفرق في التكلفة كبير؛ أجب عن التكلفة أيضًا.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>قدّر ما يتغير لو نُقلت بيانات التذكرة الوصفية وحدها دون النص والمرفقات.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم تذكرة حساسة في العينة؟ وما نسبتها؟</li>
+  <li>أي حالة إعفاء بدت أقرب، ولماذا لا تنطبق؟</li>
+  <li>ما البديل الذي تذكره المذكرة؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المفتاح في <code>labs/solutions/D4_3.md</code>: 172 تذكرة حساسة من 600 (28.7%): 167 في النص، و14 مرفقها نتيجة تحليل، مع تداخل. و36 مرفقها صورة هوية: بيانات شخصية غير حساسة في تعريف النظام.</li>
+    <li>الفخ في العدّ: جمع 167 و14، أو عدّ صور الهوية (36) أو لقطات الشاشة (41) حساسة. التذكرة تُعد مرة واحدة، ورقم الهوية ليس من فئات البيانات الحساسة في النظام.</li>
+    <li>القرار المرجعي: لا يمضي كما خُطط. لا تنطبق (ب) لأن النقل مستمر، ولا (ج) لأن قُرب ليست في مجموعة المورد، ولا (د) لأن البيانات حساسة ولا شهادة للمورد، ولا (هـ) لأن الغرض ليس بحثًا. البديل منطقة المورد الداخلية.</li>
+    <li>القائمة افتراض في الحالة. علّم المشاركين أن يتحققوا منها يوم القرار، لا يوم الخطة.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D4_2.html" rel="prev">→ المختبر السابق</a><a href="D4_4.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · حماية البيانات الشخصية في التطبيق العملي<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع a8e0896</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T09:11:03Z","version":"2027.1.0","commit":"a8e0896"},"course":{"id":"lds-dmg-206","code":"LDS-DMG-206","title":"حماية البيانات الشخصية في التطبيق العملي","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-dmg-206/","repo":"SDAIAAcademy/lds-dmg-206","home":"../index.html"},"lab":{"id":"4.3","title":"تقويم نقل التذاكر","summary":"تقويم مخاطر نقل نظام التذاكر إلى منطقة خارج المملكة بعناصره الستة، ومسار القرار، ومذكرة قرار لمديرة دعم المرضى","minutes":35,"day":4,"unit":"اليوم 4","session":3,"deck":"../slides/day4.html#lab-4-3","prev":"D4_2.html","next":"D4_4.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>
